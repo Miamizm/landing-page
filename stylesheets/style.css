@@ -23,3 +23,20 @@ ul, li {
     display: flex;
     list-style-type: none;
 }
+
+li {
+    gap:15px;
+}
+
+
+.header-content {
+    display: flex;
+    flex: 1;
+}
+
+.header-box {
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+}
+
