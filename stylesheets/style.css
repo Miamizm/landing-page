@@ -1,6 +1,25 @@
 .nav-bar {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
 
+}
+
+.right-nav {
+    display: flex;
+
+}
+
+.left-nav {
+    display: flex;
+
+}
+
+
+ul, li {
+    display: flex;
+    list-style-type: none;
 }
