@@ -3,6 +3,8 @@
 }
 
 
+
+
 .nav-bar {
     display: flex;
     flex: 1;
@@ -14,15 +16,21 @@
 
 }
 
+.nav-section {
+  display: flex;
+  align-items: center;
+  flex:1;
+
+}
+
 .right-nav {
     display: flex;
-    margin-right: .5em;
 
 }
 
 .left-nav {
     display: flex;
-    margin-left: .5em;
+    margin-left: 1em;
 
 }
 
@@ -36,50 +44,65 @@ ul, li {
 
 li {
 
-margin-right: 1em;
+margin-right: 2em;
+padding: 5px 5px;
 
 }
-
+.nav-link {
+  text-decoration: none;
+  color:#fff;
+}
 
 .header-content {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    gap:10px;
-    background-color: #1f2937;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#1f2937;
+  color:#fff;
+  padding: 2em 2em;
 }
 
 .header-box {
-    display: flex;
-    flex: 1;
-    height: 400px;
-    width: 400px;
-    margin: .5em 1em;
-    padding-bottom: 2em;
-}
-
-
-.big-text-left {
-  color: #fff;
-  font-size: 48px;
-  text-align:center;
-}
-
-
-.header-box-left ,.header-box-right {
   display: flex;
-  flex-direction:column;
+  flex:1;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.small-text-left {
-  padding: 10px 15px;
-  color: rgba(255,255,255,.8);
+.header-box-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items:flex-start;
 }
 
-.header-button {
+.header-box-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+}
+
+.header-bold-heading {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: -12px;
+}
+
+.box-right-img {
+  display:flex;
+  flex:1;
+  height:200px;
+  width: 200px;
+  background-color:#7d828a;
+  align-items: center;
+  justify-content: center;
+  padding:20px 20px;
+}
+
+
+.header-button , .action-box-button {
   width: 75px;
   background-color: #3882f6;
   color: #fff;
@@ -89,30 +112,15 @@ margin-right: 1em;
   margin-left: 2em;
 }
 
-.header-box-right {
-display: flex;
-justify-content: center;
-}
-
-.right-box-placeholder-text {
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
 
 
-}
-
-.box-right-img {
-  height: 200px;
-  width: auto;
-  background-color: gray;
-
-}
-
-
-.header-button:hover {
+ .header-button:hover {
   background-color:rgba(56, 130, 246,.6);
+  transition: .8s;
+}
+
+.action-box-button:hover {
+  background-color: rgba(56, 130, 246, 0.6);
   transition: .8s;
 }
 
@@ -120,22 +128,139 @@ color: #fff;
 
 .center-content {
   display: flex;
-  flex-direction: column;
   flex:1;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.center-content-box {
+.center-content-box, .center-content-text {
   display: flex;
+  flex:1;
   flex-direction: row;
   justify-content: center;
 }
 .square {
   display: flex;
+  flex: 1;
+  flex-direction: row;
   height: 100px;
   width: 100px;
+
+}
+
+.square-1 , .square-2, .square-3, .square-4 {
   border: 2px solid #3882f6;
   border-radius: 15px;
   margin-right: .5em;
+}
+
+.square-text {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-right: .
+}
+
+  .center-content-text {
+    justify-content: space-between;
+    display: flex;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+}
+.big-text-left, .small-text-left {
+  display:flex;
+}
+
+.square-text-1,.square-text-2,.square-text-3 {
+  margin-right: 1em;
+}
+
+
+
+
+.quote-div {
+  background-color: #e5e7eb;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: #fff;
+  width: 100vw;
+
+}
+
+.quote-text {
+  padding: 4em 4em;
+  width:50%;
+  font-size: 140%;
+  font-style: italic;
+  color: #1f2937;
+}
+
+
+.call-to-action {
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+
+
+}
+
+
+
+
+.blue-box {
+  display: flex;
+  flex-d
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding:4em 4em;
+
+}
+.action-box {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  background-color: #3882f6;
+  margin: 2em 0;
+  border-radius: 15px;
+  padding: 20px 20px;
+  color: #fff;
+
+}
+
+.action-box-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.action-box-left {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.action-box-button{
+  border: 2px solid #fff;
+  width: 100px;
+  height: 50px;
+}
+
+.bold-heading-text {
+  font-weight: bold;
+  color: #fff;
+  font-size: 120%;
+  margin-bottom: -10px;
+
 }
